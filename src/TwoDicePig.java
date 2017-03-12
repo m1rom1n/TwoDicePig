@@ -95,7 +95,7 @@ public class TwoDicePig {
             turnScore = (dice.getDie1() + dice.getDie2());
             totalScore = player[i].getScore() + turnScore;
             player[i].setScore(totalScore);
-            System.out.println("Your total score is " + player[i].getScore());
+            System.out.println(player[i].getName() + "'s score is " + totalScore);
             turnOver = true;
           }
         }
@@ -111,7 +111,7 @@ public class TwoDicePig {
           turnScore = (dice.getDie1() + dice.getDie2());
           totalScore = player[i].getScore() + turnScore;
           player[i].setScore(totalScore);
-          System.out.println("Your total score is " + player[i].getScore());
+          System.out.println(player[i].getName() + "'s score is " + totalScore);
           System.out.println("Would you like to hold your turn? Yes or No?");
           userResponse = TextIO.getln();
           if (userResponse == "Yes" || userResponse == "yes") {
